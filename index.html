@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laboratorios de Ciencias Básicas - Bogotá | AREANDINA</title>
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- Barra superior -->
+  <header class="topbar">
+    <div class="topbar__inner container">
+      <div class="brand" aria-label="Encabezado institucional">
+        <img class="brand__logo-img" src="assets/img/Logo.png" alt="AREANDINA - Fundación Universitaria del Área Andina">
+        <div class="brand__text">
+          <div class="brand__title">Laboratorios de Ciencias Básicas - Bogotá</div>
+          <div class="brand__subtitle">Información · Normas · Descargas</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#inicio" class="nav__link">Inicio</a>
+        <a href="#normativa" class="nav__link">Normativa</a>
+        <a href="#horarios" class="nav__link">Horarios</a>
+        <a href="#personal" class="nav__link">Personal</a>
+        <a href="#descargas" class="nav__link">Descargas</a>
+        <a href="#faq" class="nav__link">Preguntas frecuentes</a>
+        <a href="#contacto" class="nav__link nav__cta">Contacto</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <h1 class="hero__title">Portal informativo del laboratorio</h1>
+        <p class="hero__text">
+          Consulta normativa, horarios, personal, documentos oficiales y accesos a fichas de datos de seguridad (FDS).
+          Este sitio es informativo; el documento oficial se encuentra disponible en PDF.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#descargas">Ir a descargas</a>
+          <a class="btn btn--ghost" href="#normativa">Ver normativa</a>
+        </div>
+
+        <div class="hero__badges" aria-label="Aspectos destacados">
+          <div class="badge">Uso de EPP</div>
+          <div class="badge">Prohibiciones</div>
+          <div class="badge">Régimen disciplinario</div>
+          <div class="badge">Horario continuo</div>
+        </div>
+      </div>
+
+      <aside class="hero__card" aria-label="Tarjeta rápida">
+        <div class="card">
+          <div class="card__header">
+            <h2 class="card__title">Antes de ingresar</h2>
+            <p class="card__subtitle">Checklist rápido</p>
+          </div>
+
+          <ul class="checklist">
+            <li>Trae bata manga larga y zapatos cerrados.</li>
+            <li>Usa monogafas y EPP según la práctica.</li>
+            <li>No consumas alimentos o bebidas.</li>
+            <li>Respeta la señalización e instrucciones del personal.</li>
+            <li>Cuida equipos, materiales e instalaciones.</li>
+          </ul>
+
+          <button class="btn btn--secondary" id="btnScrollNormativa" type="button">
+            Ver normativa
+          </button>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <main class="container main">
+    <!-- Normativa -->
+    <section id="normativa" class="section">
+      <header class="section__header">
+        <h2>Normativa</h2>
+        <p>
+          El funcionamiento de los Laboratorios de Ciencias Básicas se rige por el
+          <strong>Acuerdo No. 69 (29 de noviembre de 2022)</strong>, mediante el cual se expide el Reglamento Interno de los Laboratorios
+          de Ciencias Básicas de la Fundación Universitaria del Área Andina.
+        </p>
+      </header>
+
+      <div class="grid grid--2">
+        <article class="panel">
+          <h3>Alcance</h3>
+          <p>
+            Aplica a estudiantes, docentes, investigadores y usuarios externos/visitantes durante prácticas, tutorías/repasos
+            y actividades de investigación en las instalaciones de los laboratorios.
+          </p>
+        </article>
+
+        <article class="panel">
+          <h3>Objetivos</h3>
+          <p>
+            Establecer procesos y actividades para la organización de prácticas, y reglamentar responsabilidades y condiciones
+            de seguridad para el uso adecuado de equipos, materiales e instalaciones.
+          </p>
+        </article>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="panel">
+          <h3>Bioseguridad (EPP)</h3>
+          <ul class="list">
+            <li>Bata blanca manga larga cerrada.</li>
+            <li>Monogafas (gafas de fórmula no reemplazan).</li>
+            <li>Guantes, gorro y tapabocas según la práctica.</li>
+            <li>Cabello recogido y zapatos cerrados.</li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <h3>Conducta y cuidado</h3>
+          <ul class="list">
+            <li>Seguir instrucciones del docente y del personal del laboratorio.</li>
+            <li>No ausentarse sin permiso.</li>
+            <li>Limpiar el área y el material utilizado.</li>
+            <li>Disponer residuos según indicaciones.</li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <h3>Prohibiciones</h3>
+          <ul class="list">
+            <li>Prohibido consumir alimentos/bebidas o fumar.</li>
+            <li>Celular restringido (salvo autorización).</li>
+            <li>Prohibido ingresar bajo efectos de alcohol o sustancias.</li>
+            <li>Prohibido ingresar con ropa inadecuada (no cubre extremidades).</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="callout">
+        <div class="callout__icon" aria-hidden="true">i</div>
+        <div class="callout__content">
+          <strong>Nota:</strong> Este sitio tiene fines informativos. Para la consulta completa y oficial, descarga el Reglamento en PDF.
+        </div>
+      </div>
+    </section>
+
+    <!-- Horarios -->
+    <section id="horarios" class="section">
+      <header class="section__header">
+        <h2>Horarios</h2>
+        <p>Información general de atención y ubicación del laboratorio.</p>
+      </header>
+
+      <div class="grid grid--2">
+        <article class="panel">
+          <h3>Horario de atención</h3>
+          <p><strong>Horario continuo:</strong> 7:00AM a 10:00PM</p>
+          <p class="muted">El acceso puede variar por programación académica, prácticas y disponibilidad de espacios.</p>
+        </article>
+
+        <article class="panel">
+          <h3>Ubicación</h3>
+          <p><strong>Sede:</strong> 101</p>
+          <p><strong>Piso:</strong> Segundo piso</p>
+          <p class="muted">Para ingresar a salas específicas, sigue la señalización y las indicaciones del personal.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Personal -->
+    <section id="personal" class="section">
+      <header class="section__header">
+        <h2>Personal</h2>
+        <p>Directorio de contacto del equipo de Laboratorios de Ciencias Básicas – Bogotá.</p>
+      </header>
+
+      <div class="team">
+        <article class="person-card">
+          <div class="person-card__top">
+            <div>
+              <h3 class="person-card__name">Lady Paola Lizarazo Chaparro</h3>
+              <p class="person-card__role">Coordinadora de Laboratorios</p>
+            </div>
+            <span class="pill">Coordinación</span>
+          </div>
+          <ul class="person-card__meta">
+            <li><strong>Área:</strong> N/A</li>
+            <li><strong>Horario:</strong> 7:00AM a 4:00PM</li>
+          </ul>
+          <div class="person-card__actions">
+            <a class="chip" href="mailto:llizarazo10@areandina.edu.co">llizarazo10@areandina.edu.co</a>
+            <a class="chip" href="tel:+573163506660">+57 3163506660</a>
+          </div>
+        </article>
+
+        <article class="person-card">
+          <div class="person-card__top">
+            <div>
+              <h3 class="person-card__name">Ing. Diego Camilo Noguera Vasquez</h3>
+              <p class="person-card__role">Profesional de Laboratorio</p>
+            </div>
+            <span class="pill pill--alt">Química</span>
+          </div>
+          <ul class="person-card__meta">
+            <li><strong>Área:</strong> Química</li>
+            <li><strong>Horario:</strong> 1:00PM a 10:00PM</li>
+          </ul>
+          <div class="person-card__actions">
+            <a class="chip" href="mailto:dnoguera6@areandina.edu.co">dnoguera6@areandina.edu.co</a>
+            <a class="chip" href="tel:+573213722354">+57 3213722354</a>
+          </div>
+        </article>
+
+        <article class="person-card">
+          <div class="person-card__top">
+            <div>
+              <h3 class="person-card__name">Valeria Alejandra Daza Turizo</h3>
+              <p class="person-card__role">Profesional de Laboratorio</p>
+            </div>
+            <span class="pill pill--alt">Microbiología</span>
+          </div>
+          <ul class="person-card__meta">
+            <li><strong>Área:</strong> Microbiología</li>
+            <li><strong>Horario:</strong> 7:00AM a 4:00PM</li>
+          </ul>
+          <div class="person-card__actions">
+            <a class="chip" href="mailto:vdaza22@areandina.edu.co">vdaza22@areandina.edu.co</a>
+            <a class="chip" href="tel:+573013152994">+57 3013152994</a>
+          </div>
+        </article>
+
+        <article class="person-card">
+          <div class="person-card__top">
+            <div>
+              <h3 class="person-card__name">Alix Yolanda Gonzalez Pinzon</h3>
+              <p class="person-card__role">Auxiliar de Laboratorio</p>
+            </div>
+            <span class="pill">Auxiliar</span>
+          </div>
+          <ul class="person-card__meta">
+            <li><strong>Área:</strong> N/A</li>
+            <li><strong>Horario:</strong> 1:00PM a 10:00PM</li>
+          </ul>
+          <div class="person-card__actions">
+            <a class="chip" href="mailto:agonzalez411@areandina.edu.co">agonzalez411@areandina.edu.co</a>
+            <a class="chip" href="tel:+573184199084">+57 3184199084</a>
+          </div>
+        </article>
+
+        <article class="person-card">
+          <div class="person-card__top">
+            <div>
+              <h3 class="person-card__name">Viviana Alarcón Urrea</h3>
+              <p class="person-card__role">Auxiliar de Laboratorio</p>
+            </div>
+            <span class="pill">Auxiliar</span>
+          </div>
+          <ul class="person-card__meta">
+            <li><strong>Área:</strong> N/A</li>
+            <li><strong>Horario:</strong> 7:00AM a 4:00PM</li>
+          </ul>
+          <div class="person-card__actions">
+            <a class="chip" href="mailto:valarcon4@areandina.edu.co">valarcon4@areandina.edu.co</a>
+            <a class="chip" href="tel:+573057248863">+57 3057248863</a>
+          </div>
+        </article>
+
+        <article class="person-card">
+          <div class="person-card__top">
+            <div>
+              <h3 class="person-card__name">Maria Daniela Alape Barajas</h3>
+              <p class="person-card__role">Auxiliar de Laboratorio</p>
+            </div>
+            <span class="pill">Auxiliar</span>
+          </div>
+          <ul class="person-card__meta">
+            <li><strong>Área:</strong> N/A</li>
+            <li><strong>Horario:</strong> 7:00AM a 11:00AM</li>
+          </ul>
+          <div class="person-card__actions">
+            <a class="chip" href="mailto:malape5@areandina.edu.co">malape5@areandina.edu.co</a>
+            <a class="chip" href="tel:+573113557107">+57 3113557107</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="callout" style="margin-top:14px;">
+        <div class="callout__icon" aria-hidden="true">i</div>
+        <div class="callout__content">
+          <strong>Nota:</strong> Los horarios pueden variar por actividades académicas y programación de prácticas.
+        </div>
+      </div>
+    </section>
+
+    <!-- Descargas -->
+    <section id="descargas" class="section">
+      <header class="section__header">
+        <h2>Descargas</h2>
+        <p>Documentos oficiales y accesos a repositorios de consulta.</p>
+      </header>
+
+      <div class="downloads">
+        <div class="download-card">
+          <div class="download-card__info">
+            <h3 class="download-card__title">Reglamento interno de laboratorios (Acuerdo 69 de 2022)</h3>
+            <p class="download-card__meta">PDF · Documento oficial</p>
+          </div>
+          <button class="btn btn--primary" type="button" onclick="descargarReglamento()">
+            Descargar PDF
+          </button>
+        </div>
+
+        <div class="download-card">
+          <div class="download-card__info">
+            <h3 class="download-card__title">Fichas de Datos de Seguridad (FDS)</h3>
+            <p class="download-card__meta">Acceso a carpeta de documentos (Google Drive u otra nube)</p>
+          </div>
+          <a class="btn btn--secondary" id="btnFDS" href="#" target="_blank" rel="noopener">
+            Abrir carpeta FDS
+          </a>
+        </div>
+
+        <div class="download-card download-card--muted">
+          <div class="download-card__info">
+            <h3 class="download-card__title">Otros documentos (próximamente)</h3>
+            <p class="download-card__meta">Guías, instructivos y formatos internos.</p>
+          </div>
+          <button class="btn btn--disabled" type="button" disabled>No disponible</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <header class="section__header">
+        <h2>Preguntas frecuentes</h2>
+        <p>Respuestas rápidas a dudas comunes sobre acceso, bioseguridad y documentos.</p>
+      </header>
+
+      <div class="faq">
+        <details class="faq__item">
+          <summary class="faq__q">¿Puedo ingresar sin bata o sin monogafas?</summary>
+          <div class="faq__a">
+            No. El uso de elementos de bioseguridad es obligatorio según la práctica. Sin EPP completo, el ingreso puede ser restringido.
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__q">¿Está permitido comer o tomar bebidas dentro del laboratorio?</summary>
+          <div class="faq__a">
+            No. Está prohibido consumir alimentos o bebidas dentro de los laboratorios.
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__q">¿Dónde consulto las FDS de los reactivos?</summary>
+          <div class="faq__a">
+            En la sección <strong>Descargas</strong> encontrarás el acceso a la carpeta de FDS (Drive u otra nube).
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__q">¿Qué pasa si se daña o se pierde un equipo o material?</summary>
+          <div class="faq__a">
+            Se deben seguir los lineamientos institucionales. Puede requerirse reposición y aplicarse medidas según reglamentos vigentes.
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__q">¿Puedo usar el celular durante la práctica?</summary>
+          <div class="faq__a">
+            Su uso está restringido; si es necesario, debe solicitarse autorización.
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section">
+      <header class="section__header">
+        <h2>Contacto</h2>
+        <p>Canales oficiales de comunicación del laboratorio (sin formularios).</p>
+      </header>
+
+      <div class="grid grid--2">
+        <article class="panel">
+          <h3>Contacto general</h3>
+          <ul class="list">
+            <li><strong>Correo:</strong> <a class="link" href="mailto:laboratorioscb@areandina.edu.co">laboratorioscb@areandina.edu.co</a></li>
+            <li><strong>Teléfono:</strong> <a class="link" href="tel:+573163506660">+57 3163506660</a></li>
+            <li><strong>Ubicación:</strong> Sede 101, segundo piso</li>
+          </ul>
+
+          <div class="contact-actions">
+            <a class="btn btn--primary" href="mailto:laboratorioscb@areandina.edu.co?subject=Solicitud%20-%20Laboratorios%20CB%20Bogot%C3%A1&body=Hola%2C%20me%20gustar%C3%ADa%20realizar%20la%20siguiente%20solicitud%3A%0A%0A-%20Nombre%3A%0A-%20Programa%3A%0A-%20Asignatura%3A%0A-%20Fecha%20y%20hora%3A%0A-%20Detalle%3A%0A">
+              Escribir correo
+            </a>
+            <button class="btn btn--secondary" type="button" id="copyEmailBtn" data-copy="laboratorioscb@areandina.edu.co">
+              Copiar correo
+            </button>
+          </div>
+
+          <p class="muted" id="copyHint" aria-live="polite"></p>
+        </article>
+
+        <article class="panel">
+          <h3>Responsable</h3>
+          <p><strong>Lady Paola Lizarazo Chaparro</strong></p>
+          <p class="muted">Coordinadora de Laboratorios</p>
+
+          <div class="contact-actions" style="margin-top:10px;">
+            <a class="btn btn--ghost" href="mailto:llizarazo10@areandina.edu.co?subject=Consulta%20-%20Laboratorios%20CB%20Bogot%C3%A1">
+              Contactar coordinación
+            </a>
+            <a class="btn btn--ghost" href="tel:+573163506660">Llamar</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="callout" style="margin-top:14px;">
+        <div class="callout__icon" aria-hidden="true">i</div>
+        <div class="callout__content">
+          <strong>Descargo de Responsabilidad:</strong> La información publicada es de carácter informativo. La aplicación y verificación de las disposiciones se rige por el reglamento institucional vigente.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <strong>Laboratorios de Ciencias Básicas - Bogotá</strong>
+        <div class="footer__small">AREANDINA · Información, normas y descargas</div>
+      </div>
+      <div class="footer__right footer__small">
+        © <span id="year"></span> · Actualizado: <span id="lastUpdate"></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
